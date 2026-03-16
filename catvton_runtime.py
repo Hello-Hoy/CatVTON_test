@@ -155,9 +155,16 @@ def make_grid(images: List[Image.Image], cols: int = 4, gap: int = 4) -> Image.I
 def build_agnostic_mask(label_map_path: Path, mask_path: Path, category: str, force: bool = False) -> Image.Image:
     mask_path.parent.mkdir(parents=True, exist_ok=True)
     if mask_path.exists() and not force:
-        return Image.open(mask_path).convert("L")
+        existing_mask = Image.open(mask_path).convert("L")
+        existing_array = np.array(existing_mask)
+        # Earlier runs cached empty masks because palette label maps were read as grayscale.
+        # Regenerate obviously invalid all-zero masks instead of reusing them forever.
+        if np.any(existing_array >= 128):
+            return existing_mask
 
-    labels = np.array(Image.open(label_map_path).convert("L"))
+    labels = np.array(Image.open(label_map_path))
+    if labels.ndim == 3:
+        labels = labels[..., 0]
     mask = np.isin(labels, CATEGORY_MASK_LABELS[category]).astype(np.uint8) * 255
     mask_img = Image.fromarray(mask, mode="L")
     mask_img = mask_img.filter(ImageFilter.MaxFilter(size=9))
