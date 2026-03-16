@@ -186,6 +186,18 @@ attention checkpoint는 CatVTON 공개 형식과 맞춰 다음 경로에 저장�
 - Hugging Face repo id 예: `zhengchong/CatVTON`
 - 로컬 경로 예: `outputs/smoke`
 
+## 비즈니스 에이전트 워크스페이스
+
+학습된 CatVTON 자산을 이용해 사업 아이템 브레인스토밍, 시장조사, 경쟁사 분석, 가격 전략, 재무 예측, 기술 포지셔닝을 병렬로 다루기 위한 보조 워크스페이스가 `worktrees/` 아래에 추가되었습니다.
+
+핵심 파일:
+
+- `worktrees/README.md`
+- `worktrees/WORKTREE_CONTRACT.md`
+- `worktrees/SKILL_MATRIX.md`
+
+각 worktree는 `brief.md`, `output.md`, `handoff.md`, `status.json`, `evidence/` 계약을 공유하며, 최종 후보 선정과 사업계획서 통합은 `worktrees/orchestrator`가 담당합니다.
+
 ## GitHub 업로드 준비
 
 이 폴더는 데이터 제외 상태로 커밋하도록 설계되어 있습니다.

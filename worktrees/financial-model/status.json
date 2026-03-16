@@ -1,0 +1,21 @@
+{
+  "worktree": "financial-model",
+  "state": "todo",
+  "candidate_id": "catvton-business-v1",
+  "updated_at": "2026-03-16",
+  "owner": "financial-model",
+  "candidate_stage": "selected_business_item",
+  "upstream_inputs": [
+    "../pricing-revenue/output.md",
+    "../orchestrator/output.md"
+  ],
+  "deliverables": [
+    "three scenarios",
+    "assumptions table",
+    "burn and runway view"
+  ],
+  "blocked_by": [
+    "../pricing-revenue/output.md",
+    "../orchestrator/output.md"
+  ]
+}

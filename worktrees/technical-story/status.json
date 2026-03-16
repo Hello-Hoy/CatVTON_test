@@ -1,0 +1,18 @@
+{
+  "worktree": "technical-story",
+  "state": "todo",
+  "candidate_id": "catvton-business-v1",
+  "updated_at": "2026-03-16",
+  "owner": "technical-story",
+  "candidate_stage": "shortlist",
+  "upstream_inputs": [
+    "../../README.md",
+    "../../RESULTS_AND_HANDOFF.md"
+  ],
+  "deliverables": [
+    "technical strengths",
+    "technical limits",
+    "roadmap notes"
+  ],
+  "blocked_by": []
+}

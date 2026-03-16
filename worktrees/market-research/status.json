@@ -1,0 +1,20 @@
+{
+  "worktree": "market-research",
+  "state": "todo",
+  "candidate_id": "catvton-business-v1",
+  "updated_at": "2026-03-16",
+  "owner": "market-research",
+  "candidate_stage": "shortlist",
+  "upstream_inputs": [
+    "../brainstorm-pmf/output.md",
+    "../orchestrator/brief.md"
+  ],
+  "deliverables": [
+    "market sizing",
+    "segment ranking",
+    "beachhead recommendation"
+  ],
+  "blocked_by": [
+    "../brainstorm-pmf/output.md"
+  ]
+}

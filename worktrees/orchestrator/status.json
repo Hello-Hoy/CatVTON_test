@@ -1,0 +1,18 @@
+{
+  "worktree": "orchestrator",
+  "state": "doing",
+  "candidate_id": "catvton-business-v1",
+  "updated_at": "2026-03-16",
+  "owner": "orchestrator",
+  "candidate_stage": "idea_pool",
+  "upstream_inputs": [
+    "README.md",
+    "RESULTS_AND_HANDOFF.md"
+  ],
+  "deliverables": [
+    "candidate list",
+    "promotion decisions",
+    "business-plan draft"
+  ],
+  "blocked_by": []
+}

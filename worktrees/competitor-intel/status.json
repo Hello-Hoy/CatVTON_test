@@ -1,0 +1,20 @@
+{
+  "worktree": "competitor-intel",
+  "state": "todo",
+  "candidate_id": "catvton-business-v1",
+  "updated_at": "2026-03-16",
+  "owner": "competitor-intel",
+  "candidate_stage": "shortlist",
+  "upstream_inputs": [
+    "../brainstorm-pmf/output.md",
+    "../market-research/output.md"
+  ],
+  "deliverables": [
+    "competitor map",
+    "pricing notes",
+    "differentiation summary"
+  ],
+  "blocked_by": [
+    "../brainstorm-pmf/output.md"
+  ]
+}

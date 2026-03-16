@@ -1,0 +1,21 @@
+{
+  "worktree": "pricing-revenue",
+  "state": "todo",
+  "candidate_id": "catvton-business-v1",
+  "updated_at": "2026-03-16",
+  "owner": "pricing-revenue",
+  "candidate_stage": "validated_candidate",
+  "upstream_inputs": [
+    "../competitor-intel/output.md",
+    "../market-research/output.md"
+  ],
+  "deliverables": [
+    "pricing metric",
+    "package design",
+    "revenue assumptions"
+  ],
+  "blocked_by": [
+    "../competitor-intel/output.md",
+    "../market-research/output.md"
+  ]
+}
